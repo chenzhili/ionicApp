@@ -2,7 +2,7 @@
  * Created by ASUS on 2017/2/19.
  */
 (function(){
-  angular.module("huchi",[])
+  angular.module("huchi",['directive'])
     .controller("huchiCtrl",function huchiCtrl($scope){
       $scope.content1={
         1:{odds:11,check:false},

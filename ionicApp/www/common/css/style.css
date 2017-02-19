@@ -6,3 +6,5 @@
   text-align:center;
   line-height:40px;
 }
+
+.hide-tab .tab-nav.tabs{display:none;}/*一定要注意对应的元素，所有的内容都是在ion-tabs中的，我们只需要删除对应的tabs就行了*/
