@@ -1,0 +1,16 @@
+<ion-view view-title="互斥逻辑">
+  <ion-content>
+    <div class="row" style="border-bottom:1px solid #f00;margin-bottom:40px;padding-bottom:40px;">
+      <div class="col col-33" ng-repeat="item in content1" ng-click="checkBox(item,'double',$index)">
+        <div class="init-style" ng-hide="item.check">{{item.odds}}</div>
+        <div class="init-style" style="background-color:#ff0;" ng-hide="!(item.check)">{{item.odds}}</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-33" ng-repeat="item in content2" ng-click="checkBox(item,'original',$index)">
+        <div class="init-style" ng-hide="item.check">{{item.odds}}</div>
+        <div class="init-style" style="background-color:#ff0;" ng-hide="!(item.check)">{{item.odds}}</div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
