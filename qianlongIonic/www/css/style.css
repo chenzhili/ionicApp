@@ -1,0 +1,9 @@
+/* Empty. Add your own CSS if you like */
+.home_off{background:url("../img/fonts_style/home.png") no-repeat center;background-size:26px 26px;}
+.home_on{background:url("../img/fonts_style/home_on.png") no-repeat center;background-size:26px 26px;}
+.invest_off{background:url("../img/fonts_style/invest.png") no-repeat center;background-size:26px 26px;}
+.invest_on{background:url("../img/fonts_style/invest_on.png") no-repeat center;background-size:26px 26px;}
+.ours_off{background:url("../img/fonts_style/ours.png") no-repeat center;background-size:26px 26px;}
+.ours_on{background:url("../img/fonts_style/ours_on.png") no-repeat center;background-size:26px 26px;}
+.more_off{background:url("../img/fonts_style/more.png") no-repeat center;background-size:26px 26px;}
+.more_on{background:url("../img/fonts_style/more_on.png") no-repeat center;background-size:26px 26px;}

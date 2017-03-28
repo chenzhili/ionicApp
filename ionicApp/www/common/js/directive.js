@@ -18,5 +18,17 @@
           });
         }
       }
-    }]);
+    }])
+    .directive("backButton",function($ionicHistory){
+      return {
+        restrict:"AE",
+        replace:true,
+        template:"<button class='button button-clear ion-chevron-left white' nav-direction='forword'></button>",
+        link:function(scope,ele,attr){
+          ele.bind('click',function(e){
+            $ionicHistory.goBack();
+          });
+        }
+      }
+    });
 })();

@@ -3,8 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic','homeCtrl','investCtrl','moreCtrl','myCtrl','huchi'])
-
+angular.module('starter', ['ionic','homeCtrl','investCtrl','moreCtrl','myCtrl','huchi','date222-ctrl'])
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -45,6 +44,7 @@ angular.module('starter', ['ionic','homeCtrl','investCtrl','moreCtrl','myCtrl','
     /*
     * 页面状态路由的设置
     * */
+
     $urlRouterProvider.otherwise("/tabs/home");
     $stateProvider
       .state("tabs",{
@@ -61,7 +61,7 @@ angular.module('starter', ['ionic','homeCtrl','investCtrl','moreCtrl','myCtrl','
           }
         }
       })
-      .state("tabs.huchi",{
+      .state("tabs.huchi",{/*用的内置的返回按钮，隐藏用的时间$ionicView.beforeEnter*/
         url:"/huchi",
         views:{
           "home":{
@@ -97,4 +97,9 @@ angular.module('starter', ['ionic','homeCtrl','investCtrl','moreCtrl','myCtrl','
           }
         }
       })
+      .state("date222",{ /*这是自己封装的返回按钮做的回退事件，本来路由就没有基于tabs上，所以不用做隐藏*/
+        url:"/date222",
+        templateUrl:"Date2017222/date222.html",
+        controller:"date222Ctrl"
+      });
   }]);

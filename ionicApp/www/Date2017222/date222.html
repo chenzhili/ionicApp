@@ -1,0 +1,12 @@
+<ion-view view-title="date222">
+  <ion-nav-buttons side="left">
+    <back-button></back-button>
+  </ion-nav-buttons>
+  <ion-content delegate-handle="myscroll" >
+    <div ng-repeat="item in arr">
+      <div>name：{{item.name}}</div>
+      <div>age: {{item.age}}</div>
+    </div>
+    <div ng-click="openPop()">我曹出来</div>
+  </ion-content>
+</ion-view>
