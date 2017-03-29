@@ -1,5 +1,27 @@
-<ion-view title="首页">
+<ion-view hide-nav-bar="true" id="home">
   <ion-content>
-    <h1>首页</h1>
+    <div class="home_banner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/home/banner.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/home/banner.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/home/banner.jpg">
+        </div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="home_adv" ng-show="home.noticeState == 1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide clear-float" ng-repeat="item in home.content">
+          {{item}}
+          <i class="gt close" ng-click="closeNotic()">x</i>
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
