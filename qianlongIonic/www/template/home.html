@@ -23,5 +23,42 @@
         </div>
       </div>
     </div>
+<!-- html自带的广告播放标签 -->
+    <marquee id="notice" direction="left" align="bottom" height="25" width="100%" behavior="scroll"  scrollamount="2" scrolldelay="1">
+            这个标签，原声用于播放广告，并且不需要写js但是对于兼容性不是那么好，但是在手机上完全能够胜任
+    </marquee>
+    <div class="plan-detail">
+      <div class="plan_title">理财-兴隆计划</div>
+      <div class="plan_message" style="position:relative;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="item in home.yueYue">
+              <div class="row">
+                <div class="col col-50">
+                  月月投({{item.date}})
+                </div>
+                <div class="col col-50 plan_money">
+                  <span>1000元起投</span>
+                </div>
+              </div>
+              <div class="row row-wrap plan_money_detail">
+                <div class="col col-30">
+                  <div  style="font-size:18px;color:#f4545a;">{{item.rate}}+4<i style="font-size:10px;">%</i></div>
+                  <div>预期年收益</div>
+                </div>
+                <div class="col col-40">
+                  <div>计划金额：<span>{{item.planMoney}}万元</span></div>
+                  <div>持有期限：<span>{{item.day}}天</span></div>
+                </div>
+                <div class="col col-30">
+                  <button class="button">收益中</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination" style="bottom:-6px;left:136px;"></div>
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>

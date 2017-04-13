@@ -6,7 +6,23 @@ angular.module("HomeCtrl",[])
     /*初始化数据*/
     $scope.home={
       content:["p2p的新奇","高利率高回报高风险","今天反馈大力赠送"],
-      noticeState:1
+      noticeState:1,
+      yueYue:[{
+        date:"20160619",
+        rate:8,
+        planMoney:20,
+        day:30
+      },{
+        date:"20161219",
+        rate:6,
+        planMoney:70,
+        day:30
+      },{
+        date:"20170219",
+        rate:8,
+        planMoney:100,
+        day:30
+      }]
     };
     $scope.closeNotic = closeNotic;
     init();
@@ -26,6 +42,11 @@ angular.module("HomeCtrl",[])
           loop:true,
           autoplay:2000,
           observer:true
+        });
+        var homePlanSwiper = new Swiper(".plan_message",{
+          direction:"horizontal",
+          loop:true,
+          pagination:".swiper-pagination"
         });
       });
       /*下面这种方式是swiper里自带的解决不作用，会观察是否改变而初始化swiper*/

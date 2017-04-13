@@ -22,3 +22,32 @@
 #home .home_banner img{width:100%;height:auto;}
 #home .home_adv .swiper-slide{line-height:18px;padding-left:38px;background:url("../img/home/notice.png") no-repeat 6px center;background-size:18px;}
 #home .home_adv .swiper-slide .close{line-height:18px;font-size:18px;color:#666;margin-right:5px;padding-left:5px;padding-right:5px;}
+#home .plan-detail{
+  width:100%;
+  height:auto;
+  margin-top:10px;
+  padding-left:10px;
+  padding-right:10px;
+}
+#home .plan_title{padding-left:36px;padding-top:20px;padding-bottom:20px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:url("../img/home/qushi.png") left center no-repeat;background-size:24px;color:#666;font-size:16px;line-height:24px;}
+#home .plan_money span{
+  text-align:left;
+  font-size:10px !important;
+  color:#F69C55;
+  border:1px solid #F69C55;
+  padding:2px 4px;
+  border-radius:12px;
+}
+#home .plan_money_detail{
+  color:#999;
+  text-align:center;
+  font-size:12px;
+}
+#home .plan_money_detail div:first-child{
+  border-right:1px solid #e5e5e5;
+}
+#home .plan_money_detail div:nth-child(2){
+  text-align:left;
+}
+#home .plan_money_detail div:nth-child(2) span{color:#333;}
+#home .plan_money_detail button{background-color:#ffe9ea;color:#f4545a;}

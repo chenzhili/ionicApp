@@ -7,6 +7,33 @@ angular.module('starter', ['ionic','home','invest','ours','more'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
+  	//用于判断当前的移动设备是哪一个
+    console.log($ionicPlatform.is("Android"));
+    console.log($ionicPlatform.is("IOS")); 
+    //用于判断当前是pc还是移动设备或则其他
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            console.log("您的浏览设备为：");
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                console.log("phone");
+            } else {
+                console.log("pc");
+            }
+        }
+
+        browserRedirect();
+
+
+
+
     if(window.cordova && window.cordova.plugins.Keyboard) {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
